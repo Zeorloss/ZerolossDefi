@@ -13,8 +13,8 @@ export enum FarmStakedOnly {
 }
 
 export enum ViewMode {
-  TABLE = 'TABLE',
   CARD = 'CARD',
+  TABLE = 'TABLE',
 }
 
 export const updateUserExpertMode = createAction<{ userExpertMode: boolean }>('user/updateUserExpertMode')

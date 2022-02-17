@@ -19,23 +19,23 @@ const farms: SerializedFarmConfig[] = [
   },
   {
     pid: 0,
-    lpSymbol: 'ZLT-BTC LP',
+    lpSymbol: 'ZLT-BNB LP',
     lpAddresses: {
       97: '0x3ed8936cAFDF85cfDBa29Fbe5940A5b0524824F4',
-      56: '0x5ec2ec1C9d2e6DEba58536c5Ecbe2E955CC4c227',
+      56: '0x87E58e46bE9d00793Ed1CF7c999c51B71923BDa7',
     },
-    token: serializedTokens.btcb,
-    quoteToken: serializedTokens.mrt,
+    token: serializedTokens.zlt,
+    quoteToken: serializedTokens.wbnb,
   },
   {
     pid: 1,
-    lpSymbol: 'ZLT-ETH LP',
+    lpSymbol: 'ZLT-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x5ec2ec1C9d2e6DEba58536c5Ecbe2E955CC4c227',
+      56: '0x87E58e46bE9d00793Ed1CF7c999c51B71923BDa7',
     },
-    token: serializedTokens.eth,
-    quoteToken: serializedTokens.mrt,
+    token: serializedTokens.zlt,
+    quoteToken: serializedTokens.wbnb,
   },
 
   {
@@ -43,41 +43,41 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'ZLT-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x5ec2ec1C9d2e6DEba58536c5Ecbe2E955CC4c227',
+      56: '0x87E58e46bE9d00793Ed1CF7c999c51B71923BDa7',
     },
-    token: serializedTokens.wbnb,
-    quoteToken: serializedTokens.mrt,
+    token: serializedTokens.zlt,
+    quoteToken: serializedTokens.wbnb,
   },
-  {
-    pid: 3,
-    lpSymbol: 'ZLT-BUSD LP',
-    lpAddresses: {
-      97: '',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
-    },
-    token: serializedTokens.wbnb,
-    quoteToken: serializedTokens.busd,
-  },
-  {
-    pid: 4,
-    lpSymbol: 'ZLT-DODO LP',
-    lpAddresses: {
-      97: '',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
-    },
-    token: serializedTokens.dodo,
-    quoteToken: serializedTokens.mrt,
-  },
-  {
-    pid: 5,
-    lpSymbol: 'ZLT-CAKE LP',
-    lpAddresses: {
-      97: '',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
-    },
-    token: serializedTokens.cake,
-    quoteToken: serializedTokens.mrt,
-  },
+  // {
+  //   pid: 3,
+  //   lpSymbol: 'ZLT-BUSD LP',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+  //   },
+  //   token: serializedTokens.wbnb,
+  //   quoteToken: serializedTokens.busd,
+  // },
+  // {
+  //   pid: 4,
+  //   lpSymbol: 'ZLT-DODO LP',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+  //   },
+  //   token: serializedTokens.dodo,
+  //   quoteToken: serializedTokens.mrt,
+  // },
+  // {
+  //   pid: 5,
+  //   lpSymbol: 'ZLT-CAKE LP',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+  //   },
+  //   token: serializedTokens.cake,
+  //   quoteToken: serializedTokens.mrt,
+  // },
   // {
   //   pid: 3,
   //   lpSymbol: 'ZLT-BUSD LP',

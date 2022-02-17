@@ -61,6 +61,7 @@ const StakeModal: React.FC<StakeModalProps> = ({
   onDismiss,
   onStaked,
 }) => {
+  console.log("stakingTokenPrice: ", stakingTokenPrice);
   const { sousId, stakingToken, earningTokenPrice, apr, userData, stakingLimit, earningToken } = pool
   const { t } = useTranslation()
   const { theme } = useTheme()

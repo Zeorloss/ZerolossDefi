@@ -21,13 +21,13 @@ export const mainnetTokens = {
     'Wrapped BNB',
     'https://www.binance.com/',
   ),
-  mrt: new Token(
+  zlt: new Token(
     MAINNET,
-    '0xb15f39d979208F05474CF4B8f66Fd46f6f4A77f3',
+    '0xfA7063d1C50108Ae371959946996d9e6FFfF8c93',
     18,
     'ZLT',
     'Zeroloss',
-    'https://zeroloss.org/',
+    'https://metarewardstoken.com/',
   ),
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
   bnb: new Token(MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18, 'BNB', 'BNB', 'https://www.binance.com/'),

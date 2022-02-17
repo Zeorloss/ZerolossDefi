@@ -47,11 +47,11 @@ const PredictionCardContent = () => {
   return (
     <>
       <Flex flexDirection="column" mt="48px">
-        <Text color="#280D5F" bold fontSize="16px">
+        <Text color="#FFC700" bold fontSize="16px">
           {t('Prediction')}
         </Text>
         {bnbWonInUsd ? (
-          <Heading color="#280D5F" my="8px" scale="xl" bold>
+          <Heading color="#FFC700" my="8px" scale="xl" bold>
             {pretext}
             {localisedBnbUsdString}
           </Heading>
@@ -61,10 +61,10 @@ const PredictionCardContent = () => {
             <div ref={observerRef} />
           </>
         )}
-        <Text color="#280D5F" mb="24px" bold fontSize="16px">
+        <Text color="#FFC700" mb="24px" bold fontSize="16px">
           {wonSoFar}
         </Text>
-        <Text color="#280D5F" mb="40px">
+        <Text color="#FFC700" mb="40px">
           {t('Will BNB price rise or fall? guess correctly to win!')}
         </Text>
       </Flex>

@@ -72,7 +72,9 @@ const totalStakedFarmsAmount = (farms, lpPrice) => {
 const Menu = (props) => {
   const { isDark, toggleTheme } = useTheme()
   const cakePriceUsd = usePriceCakeBusd()
+  console.log("cakePriceUsd", cakePriceUsd);
   const lpPrice = useLpTokenPrice("ZLT-BNB LP")
+  console.log("lpPrice", lpPrice);
   const { currentLanguage, setLanguage, t } = useTranslation()
   const { pathname } = useLocation()
   const [showPhishingWarningBanner] = usePhishingBannerManager()

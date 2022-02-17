@@ -6,12 +6,12 @@ const serializedTokens = serializeTokens()
 const pools: SerializedPoolConfig[] = [
   {
     sousId: 3,
-    stakingToken: serializedTokens.mrt,
-    earningToken: serializedTokens.mrt,
+    stakingToken: serializedTokens.zlt,
+    earningToken: serializedTokens.zlt,
     contractAddress: {
       97: '0x4d98aa2ef6E212E446ACd40D25F79517508D50E6',
       // 97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
-      56: '0x368cd43661B9cE6D24370D17C0B0E5C2B79e7439',
+      56: '0x888a439069a2A5EbfbE191e5Fe8d75eBDB5b197c',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
@@ -22,11 +22,11 @@ const pools: SerializedPoolConfig[] = [
   },
   {
     sousId: 4,
-    stakingToken: serializedTokens.mrt,
-    earningToken: serializedTokens.mrt,
+    stakingToken: serializedTokens.zlt,
+    earningToken: serializedTokens.zlt,
     contractAddress: {
       97: '0x4d98aa2ef6E212E446ACd40D25F79517508D50E6',
-      56: '0x368cd43661B9cE6D24370D17C0B0E5C2B79e7439',
+      56: '0x888a439069a2A5EbfbE191e5Fe8d75eBDB5b197c',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
@@ -36,11 +36,11 @@ const pools: SerializedPoolConfig[] = [
   },
   {
     sousId: 5,
-    stakingToken: serializedTokens.mrt,
-    earningToken: serializedTokens.mrt,
+    stakingToken: serializedTokens.zlt,
+    earningToken: serializedTokens.zlt,
     contractAddress: {
       97: '0x4d98aa2ef6E212E446ACd40D25F79517508D50E6',
-      56: '0x368cd43661B9cE6D24370D17C0B0E5C2B79e7439',
+      56: '0x888a439069a2A5EbfbE191e5Fe8d75eBDB5b197c',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,

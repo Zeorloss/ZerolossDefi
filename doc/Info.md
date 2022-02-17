@@ -1,6 +1,6 @@
 # Documentation: Info
 
-A brief overview how Info part of Zeroloss DeFi website works.
+A brief overview how Info part of PancakeSwap website works.
 
 ## Code structure
 

@@ -74,10 +74,10 @@ const StakeAction: React.FC<StakeActionsProps> = ({
           <>
             <Balance bold fontSize="20px" decimals={3} value={stakedTokenBalance} />
             {stakingTokenPrice !== 0 && (
-              <Text fontSize="12px" color="textSubtle">
+              <Text fontSize="12px" color="gold">
                 <Balance
                   fontSize="12px"
-                  color="textSubtle"
+                  color="gold"
                   decimals={2}
                   value={stakedTokenDollarBalance}
                   prefix="~"

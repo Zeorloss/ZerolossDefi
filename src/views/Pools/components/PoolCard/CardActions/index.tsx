@@ -31,6 +31,7 @@ const CardActions: React.FC<CardActionsProps> = ({ pool, stakedBalance }) => {
   const isStaked = stakedBalance.gt(0)
   const isLoading = !userData
   const canHarvest = userData.canHarvest
+  console.log("canHarvest", canHarvest);
 
   return (
     <Flex flexDirection="column">

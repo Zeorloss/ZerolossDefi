@@ -22,6 +22,7 @@ type PublicFarmData = {
 
 const fetchFarm = async (farm: SerializedFarm): Promise<PublicFarmData> => {
   const { pid, lpAddresses, token, quoteToken } = farm
+  console.log("aaaaaaaaaaaaa", "pid:", pid, "lpAddresses: ", lpAddresses, "token:", token, "quoteToken:", quoteToken);
   const lpAddress = getAddress(lpAddresses)
   const calls = [
     // Balance of token in the LP contract
@@ -61,7 +62,6 @@ const fetchFarm = async (farm: SerializedFarm): Promise<PublicFarmData> => {
 
   const [tokenBalanceLP, quoteTokenBalanceLP, lpTokenBalanceMC, lpTotalSupply, tokenDecimals, quoteTokenDecimals] =
     await multicall(erc20, calls)
-
   // Ratio in % of LP tokens that are staked in the MC, vs the total number in circulation
   const lpTokenRatio = new BigNumber(lpTokenBalanceMC).div(new BigNumber(lpTotalSupply))
 

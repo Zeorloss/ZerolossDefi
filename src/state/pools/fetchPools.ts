@@ -47,6 +47,7 @@ export const fetchPoolsBlockLimits = async () => {
 
 export const fetchPoolsTotalStaking = async () => {
   const nonBnbPools = poolsConfig.filter((p) => p.stakingToken.symbol !== 'BNB')
+  console.log("p.stakingToken.symbol: ", nonBnbPools)
   // pools: 3, 
 
   // const bnbPool = poolsConfig.filter((p) => p.stakingToken.symbol === 'BNB')
@@ -117,7 +118,7 @@ export const fetchPoolsTotalStaking = async () => {
       totalStaked: rawPoolInfos[index].balance.toString(),
       rate: new BigNumber(rawPoolInfos[index].allocPoint.toString()).div(new BigNumber(totalAllocPoint[0].toString())),
       tokenPerBlock: new BigNumber(tokenPerBlock[0].toString()).div(BIG_TEN.pow(18)),
-      harvestInterval: rawPoolInfos[index].harvestInterval.toString()
+      harvestInterval: rawPoolInfos[index][6].toString()
     })),
   ]
 }

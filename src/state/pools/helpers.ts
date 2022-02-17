@@ -41,15 +41,19 @@ export const transformPool = (pool: SerializedPool): DeserializedPool => {
 export const getTokenPricesFromFarm = (farms: SerializedFarm[]) => {
   return farms.reduce((prices, farm) => {
     const quoteTokenAddress = farm.quoteToken.address.toLocaleLowerCase()
+    console.log("xxxquoteTokenAddress: ", quoteTokenAddress);
     const tokenAddress = farm.token.address.toLocaleLowerCase()
+    console.log("xxxtokenAddress: ", tokenAddress);
     /* eslint-disable no-param-reassign */
     if (!prices[quoteTokenAddress]) {
       prices[quoteTokenAddress] = new BigNumber(farm.quoteTokenPriceBusd).toNumber()
+      console.log("xxxxfarm.quoteTokenPriceBusd:", farm.quoteTokenPriceBusd);
     }
     if (!prices[tokenAddress]) {
       prices[tokenAddress] = new BigNumber(farm.tokenPriceBusd).toNumber()
     }
     /* eslint-enable no-param-reassign */
+    console.log("xxxxxxPrice1, Price2:", prices[quoteTokenAddress], prices[tokenAddress]);
     return prices
   }, {})
 }
